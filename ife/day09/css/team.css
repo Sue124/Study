@@ -1,0 +1,51 @@
+.team{
+    height:920px;
+    border-bottom:1px solid #ccc;
+}
+.team_text{
+    width:620px;
+    text-align:center;
+    margin:0 auto;
+}
+.team_img{
+    width:80%;
+    margin:0 auto;
+}
+.img_content{
+    display:flex;
+    margin:0 auto;
+}
+.content_item{
+    display:inline-flex;
+    margin:10px 20px;
+    position: relative;
+    cursor: pointer;
+}
+.hover_item{
+    width:470px;
+    height:340px;
+    background-color:rgba(0,0,0,0.6);
+    color:white;
+    position: absolute;
+    top:15px;
+    left:0px;
+    text-align:center;
+    display:none;
+}
+.content_item:hover .hover_item{
+    display:block;
+}
+.personal_account>a>img{
+    float:left;
+    margin-left:38px;
+}
+.hover_text{
+    width:300px;
+    margin:100px auto;    
+}
+.hover_text>p{
+    opacity: 0.4;
+    text-transform: uppercase;
+    font-size:12px;
+    letter-spacing: 1px;
+}
