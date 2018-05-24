@@ -1,5 +1,5 @@
 .call_to_action{
-    background-image: url(../day09/images/background_call.png);
+    background-image: url("../images/background_call.png");
     width:100%;
     height:700px;
     position:relative;
