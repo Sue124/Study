@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../day16/resume.css" type="text/css">
+        <title>My resume</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+    <div class="all">
+        <div class="T">
+        <span id="name">林大大 </span>
+        <span>求职意向：前端工程师</span>
+    </div>
+    
+    <div class="box_1">
+        <img src="http://img.besoo.com/file/201705/11/1121438245908.jpg" alt="头像" />
+        <p class="title"><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=503265504,3551498089&fm=27&gp=0.jpg" alt="icon" /> 个人信息</p>     
+        <table>
+            <tr>
+                <td>出生日期：2018.04</td>
+                <td>现居地：中国</td>
+            </tr>
+            <tr>
+                <td>联系电话：188000000000</td>
+                <td><a href="http://mail.qq.com">邮箱：123@qq.com</a></td>
+            </tr>
+            <tr>
+                <td>毕业院校：CC</td>
+                <td>学历：本科</td>
+            </tr>
+      </table>
+      <br />
+    </div>
+    
+    <div class="box_1">
+        <p class="title"><img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=509069713,3199966437&fm=27&gp=0.jpg" alt="icon" /> 个人技能</p>
+        <ul>
+            <li>熟练掌握HTML</li>
+            <li>熟练掌握CSS</li>
+            <li>熟练掌握JavaScript</li>
+        </ul>
+        <br />
+    </div>
+    
+    <div class=" box_1">
+        <p class="title"><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3202529814,4163970886&fm=27&gp=0.jpg" alt="icon" /> 工作经历</p>
+        <ul>
+            <li>2016.04-2017.04 就职于XX公司</li>
+            <li>2017.05-至今 就职于YY公司</li>
+        </ul>
+        <br />
+    </div>
+    
+    <div class="box_1 box_2">
+        <p class="title"><img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3193359704,2540973175&fm=27&gp=0.jpg" alt="icon" /> 项目经验</p>
+        <ol>
+            <li>
+                <p class="pro_title">项目一：XXX</p>
+                <ul class="pro_content" name="pro_content">
+                    <li>
+                        <p>项目时间：2018.02-2018.04</p>
+                    </li>  
+                    <li>
+                        <p>项目描述：XXX</p>         
+                    </li> 
+                    <li>
+                        <p>项目职责：XXX</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p class="pro_title">项目二：YYY</p> 
+                <ul class="pro_content" name="pro_content">
+                    <li>
+                        <p>项目时间：2018.03-2018.04</p>
+                    </li>
+                    <li>
+                        <p>项目描述：YYY</p>
+                    </li>
+                    <li>
+                        <p>项目职责：YYY</p>
+                    </li>
+                </ul>    
+                <button id="pro_btn">点击显示/隐藏项目内容</button>
+            </li>
+        </ol>
+    </div>
+
+    <script>
+        var btn = document.getElementById("pro_btn");
+        var content = document.getElementsByName("pro_content");
+            btn.onclick = function(){
+                for(i=0;i<content.length;i++){
+                    if(content[i].style.display == "none"){
+                        content[i].style.display = 'block';
+                    }
+                    else{
+                        content[i].style.display = 'none';
+                   }
+                }
+            }       
+    </script>
+    </body>
+</html>
