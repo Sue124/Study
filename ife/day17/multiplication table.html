@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>multiplication table</title>
+        <style type = "text/css">
+            table{
+                width: 850px;
+                border-collapse: collapse;
+            }
+            table th{
+                border: grey 1px solid;
+                text-align: left;
+                text-indent: 5px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <script>
+            function mul(){
+                document.write("<table>");
+                for(n = 1; n < 10; n++){
+                    document.write("<tr>");
+                    for(m = 1; m <= n; m++){
+                        var t = n * m;
+                        document.write("<th>" + m + " * " + n + " = " + t + "</th>");
+                    }
+                document.writeln("</tr>");
+                }
+                document.write("</table>");
+            }
+            mul();
+        </script>
+    </body>
+</html>
